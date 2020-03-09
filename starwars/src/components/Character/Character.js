@@ -19,7 +19,7 @@ const Character = (props) => {
 				<Card className='character'>
 					<CardBody>
 						<CardTitle>
-							<h3> {props.characterData.name}</h3>
+							<h3 class='characterName'> {props.characterData.name}</h3>
 						</CardTitle>
 						<CardSubtitle>Home World: {homeworld}</CardSubtitle>
 						<CardText>

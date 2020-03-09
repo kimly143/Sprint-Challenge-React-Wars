@@ -1,6 +1,7 @@
 import React from 'react';
 import Character from '../Character/Character';
 import { Container, Row, Col, Button } from 'reactstrap';
+import './Characters.css'
 
 const Characters = (props) => {
     // STRETCH: search with regular expression === Kim Buck March 8, 2020
