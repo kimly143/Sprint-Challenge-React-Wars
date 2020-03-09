@@ -65,7 +65,7 @@ Your finished project must include all of the following requirements:
 - [x] Set the data you fetch to state.
 - [x] Map over the list and render a component for each character on the page.
 - [x] You must display at least one element for each star wars character in the data set.
-- [ ] The elements must be styled with either Reactstrap or styled-components - don't rely on browser default styles.
+- [x] The elements must be styled with either Reactstrap or styled-components - don't rely on browser default styles.
 
 #### Required best practices:
 

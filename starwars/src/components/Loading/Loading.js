@@ -2,7 +2,7 @@ import React from 'react';
 
 const Loading = () => {
 	return (
-        <p>Fetching Starwars API Data...</p>
+        <p>Loanding from Galaxy Far Far Away...</p>
     );
 };
 
