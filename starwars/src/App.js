@@ -3,7 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Loading from './components/Loading/Loading';
 import Character from './components/Character/Character';
-import { Container } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 import SearchBar from './components/SearchBar/SearchBar';
 
 const App = () => {
@@ -34,14 +34,14 @@ const App = () => {
 
 			{!characters && <Loading />}
 			{characters && (
-				<Container className='characters'>
+				<Container className='characters'><Row>
           {/* STRETCH: search using filter, going throw characters and queryRX out === Kim Buck March 8, 2020 */}
 					{characters.filter((character) => {
 							if (query == '') return true;
 							return queryRX.test(character.name) || queryRX.test(character.gender);
 						})
 						.map((character) => <Character characterData={character} query={query} />)}
-				</Container>
+				</Row></Container>
 			)}
 		</div>
 	);

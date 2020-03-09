@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardText, CardBody, CardTitle, CardSubtitle, Row, Col } from 'reactstrap';
 import Axios from 'axios';
+import './Character.css';
 
 const Character = (props) => {
 	const [ homeworld, setHomeworld ] = useState('Loading');
@@ -14,8 +15,7 @@ const Character = (props) => {
     },[props.characterData.homeworld]
     );
 	return (
-		<Row>
-			<Col className='characters' md={{ size: 4, offset: 4 }}  >
+			<Col className='characters' md={4}  >
 				<Card className='character'>
 					<CardBody>
 						<CardTitle>
@@ -34,7 +34,6 @@ const Character = (props) => {
 					</CardBody>
 				</Card>
 			</Col>
-		</Row>
 	);
 };
 export default Character;
