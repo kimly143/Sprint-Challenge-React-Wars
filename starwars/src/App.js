@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import Loading from './components/Loading/Loading';
 import Character from './components/Character/Character';
+import { Container } from 'reactstrap';
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -29,8 +30,11 @@ const App = () => {
         
         {!characters && <Loading />}
 
-        {characters && characters.map(character => 
+        {characters && (<Container >
+          { characters.map(character => 
           <Character characterData={character}/>
+        )}
+        </Container>
         )}
     </div>
   );
