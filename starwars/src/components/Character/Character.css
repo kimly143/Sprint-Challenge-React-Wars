@@ -1,0 +1,9 @@
+.character {
+    margin-bottom: 25px;
+}
+.characterName{
+    font-family: 'Starjout';
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: rgb(104, 46, 9);
+}

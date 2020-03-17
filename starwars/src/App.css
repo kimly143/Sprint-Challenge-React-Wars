@@ -1,8 +1,26 @@
 .App {
   text-align: center;
+
 }
 .Header {
-  color: #443e3e;
-  text-shadow: 1px 1px 5px #fff;
+  /* color: #443e3e; */
+  /* text-shadow: 1px 1px 5px #fff; */
+  padding-top: 5vh;
 }
 /* write your parent styles in here for your App.js */
+@font-face{
+  font-family: 'Starjout';
+  src: url(/Starjout.ttf);
+}
+.App{
+  overflow: scroll;
+  height: 100vh;
+  padding-bottom: 5vh;
+}
+.Header {
+  color:#342012;
+  font-family: 'Starjout';
+  font-size: 4rem;
+  text-shadow: 1px 5px 5px#FFF;
+  ;
+}
